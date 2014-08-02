@@ -1,4 +1,4 @@
 R.js
 ====
 
-A Simple Javascript statistical library
+A simple Javascript statistical library
