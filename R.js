@@ -3,6 +3,7 @@
     var _R = global.R,
     R = {};
 
+    // referer http://javascript.about.com/library/blaravg.htm
     // 均值
     function mean(values) {
         var avg = 0,
@@ -25,6 +26,7 @@
     }
     R.mean = mean;
 
+    // referer https://gist.github.com/caseyjustus/1166258
     // 中位数
     function median(values) {
         values.sort(function(a, b) {
@@ -80,10 +82,11 @@
     // R.max = max;
     // 极差
     function range(values) {
-        return Math.max.apply(values) - Math.min.apply(values);
+        return max(values) - min(values);
     }
     R.range = range;
 
+    //http://bateru.com/news/2011/03/javascript-standard-deviation-variance-average-functions/
     // 标准差
     function variance(values) {
         var avg = mean(values),
